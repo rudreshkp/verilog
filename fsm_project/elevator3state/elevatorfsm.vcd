@@ -1,0 +1,346 @@
+$date
+	Sat Jun 13 15:03:05 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_elevatorfsm $end
+$var wire 3 ! state_dbg [2:0] $end
+$var wire 1 " motor_up $end
+$var wire 1 # motor_down $end
+$var wire 1 $ door_open $end
+$var wire 2 % current_floor [1:0] $end
+$var reg 2 & call_floor [1:0] $end
+$var reg 1 ' call_valid $end
+$var reg 1 ( clk $end
+$var reg 1 ) door_obstruction $end
+$var reg 1 * emergency_stop $end
+$var reg 1 + rst $end
+$scope module dut $end
+$var wire 2 , call_floor [1:0] $end
+$var wire 1 ' call_valid $end
+$var wire 1 ( clk $end
+$var wire 1 ) door_obstruction $end
+$var wire 1 * emergency_stop $end
+$var wire 1 + rst $end
+$var wire 3 - state_dbg [2:0] $end
+$var parameter 32 . DOOR_TICKS $end
+$var parameter 32 / MOVE_TICKS $end
+$var parameter 3 0 S_DOOR_OPEN $end
+$var parameter 3 1 S_EMERGENCY $end
+$var parameter 3 2 S_IDLE $end
+$var parameter 3 3 S_MOVE_DOWN $end
+$var parameter 3 4 S_MOVE_UP $end
+$var reg 2 5 current_floor [1:0] $end
+$var reg 1 $ door_open $end
+$var reg 1 # motor_down $end
+$var reg 1 " motor_up $end
+$var reg 3 6 next_state [2:0] $end
+$var reg 3 7 state [2:0] $end
+$var reg 2 8 target_floor [1:0] $end
+$var reg 8 9 timer [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 4
+b10 3
+b0 2
+b100 1
+b11 0
+b10 /
+b11 .
+$end
+#0
+$dumpvars
+bx 9
+bx 8
+bx 7
+b0 6
+bx 5
+bx -
+b0 ,
+1+
+0*
+0)
+0(
+0'
+b0 &
+bx %
+x$
+x#
+x"
+bx !
+$end
+#5000
+0$
+0#
+0"
+b0 !
+b0 -
+b0 7
+b0 9
+b0 8
+b0 %
+b0 5
+1(
+#10000
+0(
+#15000
+1(
+#20000
+0(
+0+
+#25000
+1(
+#30000
+b1 6
+0(
+b10 &
+b10 ,
+1'
+#35000
+1"
+b10 8
+b1 !
+b1 -
+b1 7
+1(
+#40000
+0(
+0'
+#45000
+b1 9
+1(
+#50000
+0(
+#55000
+b1 %
+b1 5
+b0 9
+1(
+#60000
+0(
+#65000
+b1 9
+1(
+#70000
+0(
+#75000
+b11 6
+b10 %
+b10 5
+b0 9
+1(
+#80000
+0(
+#85000
+1$
+0"
+b11 !
+b11 -
+b11 7
+1(
+#90000
+0(
+#95000
+b1 9
+1(
+#100000
+0(
+#105000
+b10 9
+1(
+#110000
+0(
+#115000
+b0 6
+b11 9
+1(
+#120000
+b0 6
+0(
+1'
+#125000
+0$
+b11 6
+b0 !
+b0 -
+b0 7
+b0 9
+1(
+#130000
+b0 6
+0(
+0'
+#135000
+1(
+#140000
+0(
+#145000
+1(
+#150000
+0(
+#155000
+1(
+#160000
+0(
+#165000
+1(
+#170000
+0(
+#175000
+1(
+#180000
+0(
+1)
+#185000
+1(
+#190000
+0(
+#195000
+1(
+#200000
+0(
+#205000
+1(
+#210000
+0(
+#215000
+1(
+#220000
+0(
+0)
+#225000
+1(
+#230000
+0(
+#235000
+1(
+#240000
+0(
+#245000
+1(
+#250000
+0(
+#255000
+1(
+#260000
+0(
+#265000
+1(
+#270000
+b10 6
+0(
+b0 &
+b0 ,
+1'
+#275000
+1#
+b0 8
+b10 !
+b10 -
+b10 7
+1(
+#280000
+0(
+0'
+#285000
+b1 9
+1(
+#290000
+0(
+#295000
+b1 %
+b1 5
+b0 9
+1(
+#300000
+0(
+#305000
+b1 9
+1(
+#310000
+0(
+#315000
+b11 6
+b0 %
+b0 5
+b0 9
+1(
+#320000
+0(
+#325000
+1$
+0#
+b11 !
+b11 -
+b11 7
+1(
+#330000
+0(
+#335000
+b1 9
+1(
+#340000
+0(
+#345000
+b10 9
+1(
+#350000
+0(
+#355000
+b0 6
+b11 9
+1(
+#360000
+b100 6
+0(
+1*
+#365000
+1$
+b100 !
+b100 -
+b100 7
+b0 9
+1(
+#370000
+0(
+#375000
+1(
+#380000
+0(
+#385000
+1(
+#390000
+b0 6
+0(
+0*
+#395000
+0$
+b0 !
+b0 -
+b0 7
+1(
+#400000
+0(
+#405000
+1(
+#410000
+0(
+#415000
+1(
+#420000
+0(
+#425000
+1(
+#430000
+0(
+#435000
+1(
+#440000
+0(
